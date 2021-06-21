@@ -3,7 +3,11 @@ mat-datepicker-toggle-default-icon {
 }
 .input{
     position: relative;
+    z-index: 1
 }
 .slider {
     position: relative;
+}
+mdb-carousel-item {
+    position: unset !important;
 }

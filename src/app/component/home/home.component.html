@@ -1,14 +1,12 @@
+<app-header></app-header>
 <div>
-    <app-header></app-header>
-</div>
-<div>
-    <div class="input">
-        <input matInput [matDatepicker]="picker" style="border-style: groove; border-color: chocolate;">
-        <mat-datepicker-toggle matSuffix [for]="picker" style="color: chocolate;"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-    </div>
-    <div class="slider" style="height: 560px;">
+    <div class="slider">
         <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
+            <div class="input" style="position: absolute;">
+                <input matInput [matDatepicker]="picker" style="border-style: groove; border-color: chocolate;">
+                <mat-datepicker-toggle matSuffix [for]="picker" style="color: chocolate;"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </div>
             <mdb-carousel-item>
                 <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
@@ -35,6 +33,4 @@
         </mdb-carousel>
     </div>
 </div>
-<div>
-    <app-footer></app-footer>
-</div>
+<app-footer></app-footer>
