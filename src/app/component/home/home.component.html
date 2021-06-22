@@ -2,13 +2,44 @@
 <div>
     <div class="slider">
         <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'">
-            <div class="input" style="position: absolute;">
-                <input matInput [matDatepicker]="picker" style="border-style: groove; border-color: chocolate;">
+            <div class="input">
+                <button class="btn btnFlight">
+                    <span><img src="../../../assets/icon/loupe.png" alt="abc" class="imgicon"></span>
+                    Tìm chuyến bay</button>
+                <button class="btn btnFlight">
+                    <span><img src="../../../assets/icon/sun-umbrella.png" alt="abc" class="imgicon"></span>
+                    Chuyến bay & khách sạn</button>
+                <button class="btn btnFlight">
+                    <span><img src="../../../assets/icon/giftbox.png" alt="abc" class="imgicon"></span>
+                    Phiếu quà tặng</button>
+                <button class="btn btnFlight">
+                    <span><img src="https://image.flaticon.com/icons/png/512/2995/2995991.png" alt="abc"
+                            class="imgicon"></span>
+                    Quản lý đặt chỗ</button>
+                <button class="btn btnFlight">
+                    <span><img src="../../../assets/icon/clock.svg" alt="abc" class="imgicon"></span>
+                    Nghỉ dưỡng</button>
+                <!-- <input  [matDatepicker]="picker" [placeholder]="'dd/mm/yyyy'"
+                style="border-style: groove; border-color: chocolate;">
                 <mat-datepicker-toggle matSuffix [for]="picker" style="color: chocolate;"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
+                <mat-datepicker #picker></mat-datepicker> -->
+            </div>
+            <div class="div-choose">
+                <div class="div-choose-pick">
+                    <label>Điểm di</label>
+                    <input placeholder="Chọn điểm đến" style="width: 440px;">
+                </div>
+                <div class="div-choose-pick">
+                    <label>Điểm đến</label>
+                    <input placeholder="Chọn điểm đến" style="width: 440px;">
+                </div>
+                <button class="btn btn btn-info" style="width: 170px; height: 50px;margin-top: 27px; margin-left: 30px;">
+                    Tìm chuyến bay</button>
             </div>
             <mdb-carousel-item>
-                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" class="d-block w-100" alt="..." />
+                <img style="height: 635px; margin: auto; aspect-ratio: auto 1083 / 635; transition: background-color 300ms;
+                background-color: hsl(0, 0%, 90%); cursor: zoom-in;" 
+                src="https://img1.kienthucvui.vn/uploads/2019/10/09/anh-bau-troi-cuc-dep-voi-thai-duong-lo-rang-sau-ang-may_042051337.jpg" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -16,7 +47,7 @@
             </mdb-carousel-item>
 
             <mdb-carousel-item>
-                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="d-block w-100" alt="..." />
+                <img style="height: 635px; aspect-ratio: auto 1083 / 635;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -24,7 +55,7 @@
             </mdb-carousel-item>
 
             <mdb-carousel-item>
-                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg" class="d-block w-100" alt="..." />
+                <img style="height: 635px; aspect-ratio: auto 1083 / 635;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg" class="d-block w-100" alt="..." />
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
